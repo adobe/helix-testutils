@@ -1,13 +1,26 @@
-# Repository Template
+# Helix Test Utilities
 
 ## Status
-[![codecov](https://img.shields.io/codecov/c/github/adobe-rnd/new-nodejs-repository-template.svg)](https://codecov.io/gh/adobe-rnd/new-nodejs-repository-template)
-[![CircleCI](https://img.shields.io/circleci/project/github/adobe-rnd/new-nodejs-repository-template.svg)](https://circleci.com/gh/adobe-rnd/new-nodejs-repository-template)
-[![GitHub license](https://img.shields.io/github/license/adobe-rnd/new-nodejs-repository-template.svg)](https://github.com/adobe-rnd/new-nodejs-repository-template/blob/master/LICENSE.txt)
-[![GitHub issues](https://img.shields.io/github/issues/adobe-rnd/new-nodejs-repository-template.svg)](https://github.com/adobe-rnd/new-nodejs-repository-template/issues)
-[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe-rnd/new-nodejs-repository-template.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe-rnd/new-nodejs-repository-template)
+[![codecov](https://img.shields.io/codecov/c/github/adobe/helix-testutils.svg)](https://codecov.io/gh/adobe/helix-testutils)
+[![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-testutils.svg)](https://circleci.com/gh/adobe/helix-testutils)
+[![GitHub license](https://img.shields.io/github/license/adobe/helix-testutils.svg)](https://github.com/adobe/helix-testutils/blob/master/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/adobe/helix-testutils.svg)](https://github.com/adobe/helix-testutils/issues)
+[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-testutils.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-testutils)
 
-> Template repository for nodejs module packages.
+> Utility functions for testing Project Helix
+
+## Usage
+
+`condit` is a "conditional `it`" that can be used in Mocha tests to specify conditions that need to be met to run the test. It is being used for integration tests that depend on the presence of environment variables.
+
+```javascript
+const condit = require('@adobe/helix-testutils'); // add to your devDependencies
+
+condit('This is an integration test', condit.hasenv('AUTH_TOKEN'), () => {
+  // do your testing here
+});
+
+```
 
 ## Development
 

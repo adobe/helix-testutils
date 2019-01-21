@@ -1,7 +1,7 @@
 {
-  "name": "@adobe/new-package-template",
-  "version": "0.0.1",
-  "description": "Example Package",
+  "name": "@adobe/helix-testutils",
+  "version": "0.1.0",
+  "description": "Helix Testing Utilities",
   "main": "src/index.js",
   "scripts": {
     "test": " nyc --reporter=text --reporter=lcov --check-coverage --statements 100 --lines 100 mocha",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe-rnd/new-nodejs-repository-template"
+    "url": "https://github.com/adobe/helix-testutils"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adobe-rnd/new-nodejs-repository-template/issues"
+    "url": "https://github.com/adobe/helix-testutils/issues"
   },
-  "homepage": "https://github.com/adobe-rnd/new-nodejs-repository-template#readme",
+  "homepage": "https://github.com/adobe/helix-testutils#readme",
   "dependencies": {},
   "devDependencies": {
     "ajv": "^6.5.3",
