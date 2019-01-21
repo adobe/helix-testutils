@@ -12,5 +12,5 @@
 const condit = require('./condit');
 
 module.exports = {
-  condit
-}
+  condit,
+};
