@@ -33,4 +33,46 @@ describe('Testing condit', () => {
     assert.equal(typeof testenv, 'function');
     assert.equal(testenv(), false);
   });
+
+  it('hasenvs tests for environment variable presence', () => {
+    const envnum1 = Math.floor(Math.random() * 100);
+    const envname1 = `TEST_ENV_${envnum1}`;
+    process.env[envname1] = envnum1;
+    const envnum2 = Math.floor(Math.random() * 100);
+    const envname2 = `TEST_ENV_${envnum2}`;
+    process.env[envname2] = envnum2;
+    const testenv = condit.hasenvs([envname1, envname2]);
+    assert.equal(typeof testenv, 'function');
+    assert.equal(testenv(), true);
+    delete process.env[envname1];
+    delete process.env[envname2];
+  });
+
+  it('hasenvs tests for total environment variable absence', () => {
+    const envnum1 = Math.floor(Math.random() * 100);
+    const envname1 = `TEST_ENV_${envnum1}`;
+    delete process.env[envname1];
+    const envnum2 = Math.floor(Math.random() * 100);
+    const envname2 = `TEST_ENV_${envnum2}`;
+    delete process.env[envname2];
+    const testenv = condit.hasenvs([envname1, envname2]);
+    assert.equal(typeof testenv, 'function');
+    assert.equal(testenv(), false);
+    delete process.env[envname1];
+    delete process.env[envname2];
+  });
+
+  it('hasenvs tests for partial environment variable absence', () => {
+    const envnum1 = Math.floor(Math.random() * 100);
+    const envname1 = `TEST_ENV_${envnum1}`;
+    process.env[envname1] = envnum1;
+    const envnum2 = Math.floor(Math.random() * 100);
+    const envname2 = `TEST_ENV_${envnum2}`;
+    delete process.env[envname2];
+    const testenv = condit.hasenvs([envname1, envname2]);
+    assert.equal(typeof testenv, 'function');
+    assert.equal(testenv(), false);
+    delete process.env[envname1];
+    delete process.env[envname2];
+  });
 });
