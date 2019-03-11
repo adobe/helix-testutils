@@ -14,12 +14,9 @@
 const assert = require('assert');
 const condit = require('../src/condit');
 
-const envnum2 = Math.floor(Math.random() * 100);
-const missingenv = `TEST_ENV_${envnum2}`;
-delete process.env[missingenv];
-
 describe('Testing condit', () => {
-  let existingenv, missingenv;
+  let existingenv;
+  let missingenv;
 
   it('hasenv tests for environment variable presence', () => {
     const envnum = Math.floor(Math.random() * 100);
@@ -87,7 +84,7 @@ describe('Testing condit', () => {
   });
 
   condit('Run test that depends on existing environment variable', condit.hasenv('HOME'), () => {
-    assert.ok(process.env['HOME']);
+    assert.ok(process.env.HOME);
   });
 
 
@@ -95,5 +92,4 @@ describe('Testing condit', () => {
     // this will fail when it is executed, but the test should be skipped
     assert.ok(process.env[existingenv]);
   });
-  
 });
