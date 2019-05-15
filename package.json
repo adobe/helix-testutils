@@ -25,7 +25,7 @@
   "homepage": "https://github.com/adobe/helix-testutils#readme",
   "dependencies": {
     "@snyk/nodejs-runtime-agent": "^1.42.1",
-    "mocha": "^6.0.2"
+    "mocha": "^6.1.4"
   },
   "bin": {
     "snykmocha": "./bin/snykmocha.js"
