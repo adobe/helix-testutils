@@ -11,7 +11,9 @@
     "junit": "mocha --exit -R mocha-junit-reporter",
     "preversion": "npm run junit",
     "postversion": "git push origin master --follow-tags",
-    "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version"
+    "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   "homepage": "https://github.com/adobe/helix-testutils#readme",
   "dependencies": {
     "@snyk/nodejs-runtime-agent": "^1.42.1",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "snyk": "^1.189.0"
   },
   "bin": {
     "snykmocha": "./bin/snykmocha.js"
