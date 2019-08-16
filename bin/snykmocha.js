@@ -11,18 +11,19 @@
  * governing permissions and limitations under the License.
  */
 
+/* eslint-disable no-console */
+
 if (process.env.SNYK_PROJECT_ID) {
+  // eslint-disable-next-line global-require
   require('@snyk/nodejs-runtime-agent')({
     projectId: process.env.SNYK_PROJECT_ID,
     beaconIntervalMs: 1000,
   });
+} else if (process.env.CI) {
+  console.error('Error: SNYK_PROJECT_ID not set, required for all CI test runs');
+  process.exit(-1);
 } else {
-  if (process.env.CI) {
-    console.error('Error: SNYK_PROJECT_ID not set, required for all CI test runs');
-    process.exit(-1);
-  } else {
-    console.log('Warning: SNYK_PROJECT_ID not set, no runtime security monitoring will be applied');
-  }
+  console.log('Warning: SNYK_PROJECT_ID not set, no runtime security monitoring will be applied');
 }
 
 require('mocha/lib/cli/index').main();
