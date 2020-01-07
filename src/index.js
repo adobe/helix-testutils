@@ -10,7 +10,9 @@
  * governing permissions and limitations under the License.
  */
 const condit = require('./condit');
+const logging = require('./logging.js');
 
 module.exports = {
   condit,
+  logging,
 };
