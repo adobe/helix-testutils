@@ -5,6 +5,21 @@
 
 * **package:** Upgrade nyc and handlebars dependencies (security) ([4d2019f](https://github.com/adobe/helix-testutils/commit/4d2019fe92889cf417e300a75ac9f6eada9ddf88))
 * package.json & package-lock.json to reduce vulnerabilities ([60aa370](https://github.com/adobe/helix-testutils/commit/60aa370fcc644fe6539567b3a30f87ed956b35fc))
+* **release:** triggering release ([b54283b](https://github.com/adobe/helix-testutils/commit/b54283bd3b6b89755da85f1fad1513745544e86b))
+
+
+### Features
+
+* **bin:** Integrate Snyk Runtime Agent ([a8a09b6](https://github.com/adobe/helix-testutils/commit/a8a09b6202ae9d7c199ff370bef64831d62e534c))
+* **logging:** add logging.createTestLogger() ([#40](https://github.com/adobe/helix-testutils/issues/40)) ([4a94d2b](https://github.com/adobe/helix-testutils/commit/4a94d2b3de434bbbed3dfca4cc4b8dd943925337)), closes [#39](https://github.com/adobe/helix-testutils/issues/39)
+
+# [0.3.0](https://github.com/adobe/helix-testutils/compare/v0.2.0...v0.3.0) (2020-01-08)
+
+
+### Bug Fixes
+
+* **package:** Upgrade nyc and handlebars dependencies (security) ([4d2019f](https://github.com/adobe/helix-testutils/commit/4d2019fe92889cf417e300a75ac9f6eada9ddf88))
+* package.json & package-lock.json to reduce vulnerabilities ([60aa370](https://github.com/adobe/helix-testutils/commit/60aa370fcc644fe6539567b3a30f87ed956b35fc))
 
 
 ### Features
