@@ -8,10 +8,7 @@
     "commit": "git-cz",
     "test": " nyc --reporter=text --reporter=lcov --check-coverage --statements 100 --lines 100 mocha",
     "lint": "./node_modules/.bin/eslint .",
-    "junit": "mocha --exit -R mocha-junit-reporter",
-    "preversion": "npm run junit",
-    "postversion": "git push origin master --follow-tags",
-    "delete-git-tag": "git tag -d v$npm_package_version && git push origin :v$npm_package_version"
+    "junit": "mocha --exit -R mocha-junit-reporter"
   },
   "repository": {
     "type": "git",
