@@ -22,4 +22,9 @@ describe('Index Tests', () => {
     const result = index.condit;
     assert.equal(typeof result, 'function');
   });
+
+  it('logging is exported', async () => {
+    const result = index.logging;
+    assert.equal(typeof result, 'object');
+  });
 });

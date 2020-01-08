@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/adobe/helix-testutils#readme",
   "dependencies": {
+    "@adobe/helix-log": "^4.4.1",
     "@snyk/nodejs-runtime-agent": "^1.46.0",
     "mocha": "^7.0.0"
   },
