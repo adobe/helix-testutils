@@ -1,3 +1,11 @@
+## [0.3.1](https://github.com/adobe/helix-testutils/compare/v0.3.0...v0.3.1) (2020-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-log to v4.5.1 ([#57](https://github.com/adobe/helix-testutils/issues/57)) ([c642d6e](https://github.com/adobe/helix-testutils/commit/c642d6ee8ab1d87eaf782cf45bd7213d6fd8bbf8))
+* **snyc:** remove snyc ([eeb8d08](https://github.com/adobe/helix-testutils/commit/eeb8d081012daa8cff6313f9db72c8ce83299bf4))
+
 # [0.3.0](https://github.com/adobe/helix-testutils/compare/v0.2.0...v0.3.0) (2020-01-08)
 
 
