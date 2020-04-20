@@ -2,7 +2,7 @@ version: 2.1
 executors:
   node10:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:10.20.0-buster
         environment:
           NPM_CONFIG_PREFIX: "~/.npm-global"
     working_directory: ~/repo
@@ -15,8 +15,8 @@ commands:
         keys:
         - v1-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
     - run:
-        name: install npm 6.13.4
-        command: sudo npm -g install npm@6.13.4
+        name: install latest npm
+        command: sudo npm -g install npm
     - run:
         name: Installing Dependencies
         command: npm ci
@@ -38,30 +38,23 @@ jobs:
     - run:
         name: Lint
         command: npm run lint
-
-    # test & get code coverage
     - run:
-        name: Getting Code Coverage
-        command: circleci tests glob test/test*.js | circleci tests split --split-by=timings | xargs ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R mocha-junit-reporter --exit && npx codecov
+        name: Test and Code Coverage
+        command: npm run test-ci
         environment:
           MOCHA_FILE: junit/test-results.xml
-
     - store_test_results:
         path: junit
-
     - store_artifacts:
         path: junit
 
   release:
     executor: node10
-
     steps:
     - setup
-
     - run:
         name: revert changes to package-lock.json
         command: git checkout -- package-lock.json
-
     - run:
         name: Semantic Release
         command: npm run semantic-release
