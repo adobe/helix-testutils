@@ -5,7 +5,7 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-testutils.svg)](https://circleci.com/gh/adobe/helix-testutils)
 [![GitHub license](https://img.shields.io/github/license/adobe/helix-testutils.svg)](https://github.com/adobe/helix-testutils/blob/master/LICENSE.txt)
 [![GitHub issues](https://img.shields.io/github/issues/adobe/helix-testutils.svg)](https://github.com/adobe/helix-testutils/issues)
-[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-testutils.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-testutils) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/helix-testutils.svg)](https://greenkeeper.io/)
+[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-testutils.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-testutils) 
 
 > Utility functions for testing Project Helix
 
