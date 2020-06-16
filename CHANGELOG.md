@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/adobe/helix-testutils/compare/v0.3.1...v0.3.2) (2020-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mocha to v8 ([#74](https://github.com/adobe/helix-testutils/issues/74)) ([5033d5a](https://github.com/adobe/helix-testutils/commit/5033d5a03998a5beead7289c74a33582c2009443))
+
 ## [0.3.1](https://github.com/adobe/helix-testutils/compare/v0.3.0...v0.3.1) (2020-04-20)
 
 
