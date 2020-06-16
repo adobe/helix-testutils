@@ -87,7 +87,6 @@ describe('Testing condit', () => {
     assert.ok(process.env.HOME);
   });
 
-
   condit('Skip test that depends on missing environment variable', condit.hasenv(missingenv), () => {
     // this will fail when it is executed, but the test should be skipped
     assert.ok(process.env[existingenv]);
