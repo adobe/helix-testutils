@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/adobe/helix-testutils/compare/v0.3.2...v0.4.0) (2020-07-07)
+
+
+### Features
+
+* **log:** serialize message of mem logger ([#80](https://github.com/adobe/helix-testutils/issues/80)) ([1c17412](https://github.com/adobe/helix-testutils/commit/1c174120c597a2b42285d48b301ef48e50609db3))
+
 ## [0.3.2](https://github.com/adobe/helix-testutils/compare/v0.3.1...v0.3.2) (2020-06-16)
 
 
