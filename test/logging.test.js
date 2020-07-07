@@ -23,6 +23,12 @@ describe('Testing logging', () => {
     assert.strictEqual(log.getOutput(), 'info: hello info\ndebug: hello debug\n');
   });
 
+  it('createTestLogger can serialize fields', () => {
+    const log = logging.createTestLogger();
+    log.info('hello info', { foo: 42 });
+    assert.strictEqual(log.getOutput(), 'info: hello info { foo: 42 }\n');
+  });
+
   it('createTestLogger strips colors', () => {
     const log = logging.createTestLogger();
     log.info('\u001b[31;1;4mhello\u001b[0m');
