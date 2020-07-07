@@ -12,6 +12,7 @@
 const {
   SimpleInterface,
   MemLogger,
+  serializeMessage,
 } = require('@adobe/helix-log');
 
 const ANSI_REGEXP = RegExp([
@@ -34,8 +35,8 @@ function createTestLogger(config = {}) {
     level: 'silly',
   });
 
-  const plainMessage = (msg) => msg.message;
-  const stripMessage = (msg) => msg.message.toString().replace(ANSI_REGEXP, '');
+  const plainMessage = (msg) => serializeMessage(msg.message);
+  const stripMessage = (msg) => serializeMessage(msg.message).replace(ANSI_REGEXP, '');
   const msgFormat = config.keepANSI ? plainMessage : stripMessage;
 
   const testLogger = new SimpleInterface({
