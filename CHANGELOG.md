@@ -1,3 +1,11 @@
+## [0.4.2](https://github.com/adobe/helix-testutils/compare/v0.4.1...v0.4.2) (2020-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-log to v4.5.2 ([2bc1cab](https://github.com/adobe/helix-testutils/commit/2bc1cab4eb2b110bf4c5a62051cef51b5d4222e2))
+* **deps:** update dependency @adobe/helix-log to v4.5.3 ([6ed1d6d](https://github.com/adobe/helix-testutils/commit/6ed1d6d99372754a8e7155abdbb9b9a8979b8c92))
+
 ## [0.4.1](https://github.com/adobe/helix-testutils/compare/v0.4.0...v0.4.1) (2020-08-30)
 
 
