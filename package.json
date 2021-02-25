@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/adobe/helix-testutils#readme",
   "dependencies": {
-    "@adobe/helix-log": "4.5.3",
+    "@adobe/helix-log": "5.0.0",
     "mocha": "8.3.0"
   },
   "devDependencies": {
