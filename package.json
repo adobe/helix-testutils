@@ -1,6 +1,6 @@
 {
   "name": "@adobe/helix-testutils",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Helix Testing Utilities",
   "main": "src/index.js",
   "scripts": {
