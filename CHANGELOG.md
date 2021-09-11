@@ -1,3 +1,11 @@
+## [0.4.6](https://github.com/adobe/helix-testutils/compare/v0.4.5...v0.4.6) (2021-09-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-log to v5.0.4 ([369ce79](https://github.com/adobe/helix-testutils/commit/369ce79dc31bd7b471a0540fcb139f578d37212a))
+* **deps:** update dependency mocha to v9.1.1 ([955448a](https://github.com/adobe/helix-testutils/commit/955448a805a7b14c1a0764c544e61de6dd2bdbc7))
+
 ## [0.4.5](https://github.com/adobe/helix-testutils/compare/v0.4.4...v0.4.5) (2021-04-12)
 
 
