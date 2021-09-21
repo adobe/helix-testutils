@@ -1,3 +1,10 @@
+## [0.4.8](https://github.com/adobe/helix-testutils/compare/v0.4.7...v0.4.8) (2021-09-21)
+
+
+### Bug Fixes
+
+* use node 14 for release ([d16d0fc](https://github.com/adobe/helix-testutils/commit/d16d0fca9c698f5d3550f4051b73ee65b49769ca))
+
 ## [0.4.7](https://github.com/adobe/helix-testutils/compare/v0.4.6...v0.4.7) (2021-09-20)
 
 
