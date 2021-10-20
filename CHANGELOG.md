@@ -1,3 +1,10 @@
+## [0.4.10](https://github.com/adobe/helix-testutils/compare/v0.4.9...v0.4.10) (2021-10-20)
+
+
+### Bug Fixes
+
+* use github actions for release ([5b8919d](https://github.com/adobe/helix-testutils/commit/5b8919d4522a5f413a217549b91a46581bc31c73))
+
 ## [0.4.9](https://github.com/adobe/helix-testutils/compare/v0.4.8...v0.4.9) (2021-10-20)
 
 
