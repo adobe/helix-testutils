@@ -1,3 +1,10 @@
+## [0.4.11](https://github.com/adobe/helix-testutils/compare/v0.4.10...v0.4.11) (2022-01-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency mocha to v9.1.4 ([77c091b](https://github.com/adobe/helix-testutils/commit/77c091bbecd5d9ff2f09b503733bb218dfbcacc7))
+
 ## [0.4.10](https://github.com/adobe/helix-testutils/compare/v0.4.9...v0.4.10) (2021-10-20)
 
 
