@@ -1,3 +1,10 @@
+## [0.4.12](https://github.com/adobe/helix-testutils/compare/v0.4.11...v0.4.12) (2022-02-09)
+
+
+### Bug Fixes
+
+* deps ([243e3b6](https://github.com/adobe/helix-testutils/commit/243e3b67bb86b68b6bebc655c4337f380ef90771))
+
 ## [0.4.11](https://github.com/adobe/helix-testutils/compare/v0.4.10...v0.4.11) (2022-01-15)
 
 
