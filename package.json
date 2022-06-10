@@ -41,7 +41,7 @@
     "lint-staged": "13.0.0",
     "mocha-junit-reporter": "2.0.2",
     "nyc": "15.1.0",
-    "semantic-release": "19.0.2"
+    "semantic-release": "19.0.3"
   },
   "lint-staged": {
     "src/*.js": "eslint",
