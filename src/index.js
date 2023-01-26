@@ -9,7 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const condit = require('./condit');
+const condit = require('./condit.js');
 const logging = require('./logging.js');
 
 module.exports = {
