@@ -12,7 +12,7 @@
 
 /* eslint-env mocha */
 const assert = require('assert');
-const condit = require('../src/condit');
+const condit = require('../src/condit.js');
 
 describe('Testing condit', () => {
   let existingenv;
