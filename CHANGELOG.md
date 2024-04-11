@@ -1,3 +1,10 @@
+## [0.4.16](https://github.com/adobe/helix-testutils/compare/v0.4.15...v0.4.16) (2024-04-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-log to v6.0.2 ([1e4754d](https://github.com/adobe/helix-testutils/commit/1e4754dfd3d72eefd5d4eab4cb2aba405f0c43a8))
+
 ## [0.4.15](https://github.com/adobe/helix-testutils/compare/v0.4.14...v0.4.15) (2023-10-24)
 
 
