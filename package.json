@@ -23,13 +23,13 @@
   "homepage": "https://github.com/adobe/helix-testutils#readme",
   "dependencies": {
     "@adobe/helix-log": "6.0.3",
-    "mocha": "10.5.2"
+    "mocha": "10.6.0"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.6",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "10.0.6",
+    "@semantic-release/github": "10.0.7",
     "codecov": "3.8.3",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
